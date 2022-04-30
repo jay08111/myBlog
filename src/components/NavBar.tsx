@@ -1,17 +1,17 @@
 import * as React from "react";
-import "../style.css";
 import styled from "@emotion/styled";
-import NavBar from "../components/NavBar";
-const IndexPage: React.FC = () => {
+const NavBar: React.FC = () => {
   return (
     <>
-      <NavBar />
+      <CustomNav className="text-center p-3 text-2xl">
+        <h1>Front-end Development</h1>
+      </CustomNav>
       <main></main>
     </>
   );
 };
 
-export default IndexPage;
+export default NavBar;
 const CustomNav = styled.nav`
   background-color: #37b24d;
   color: #fff;

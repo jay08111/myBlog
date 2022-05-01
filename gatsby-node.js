@@ -1,10 +1,15 @@
+// Setup Import Alias
 const path = require("path");
-const dirname = __dirname;
-exports.onCreateWebpackConfig = ({ actions }) => {
+exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
+  const config = getConfig();
+  const output = config.output || {};
+
   actions.setWebpackConfig({
-    reslove: {
+    output,
+    resolve: {
       alias: {
-        "@": path.resolve(dirname, "src"),
+        "@": path.resolve("src"),
+        components: path.resolve(__dirname, "src/components"),
       },
     },
   });

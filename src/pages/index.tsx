@@ -9,6 +9,7 @@ const IndexPage: React.FC = () => {
       <NavBar />
       <MainContainer className="grid p-0 pr-8 pl-20 mt-8">
         <div>hey</div>
+        <h1>test commit</h1>
         <MyInformation />
       </MainContainer>
     </>

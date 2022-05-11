@@ -9,16 +9,16 @@ export const icons: IconType[] = [
   {
     id: 1,
     icon: <AiFillGithub />,
-    url: "https://www.naver.com/",
+    url: "https://github.com/jay08111/",
   },
   {
     id: 2,
     icon: <AiOutlineInstagram />,
-    url: "https://www.naver.com/",
+    url: "https://www.instagram.com/",
   },
   {
     id: 3,
     icon: <AiOutlineLinkedin />,
-    url: "https://www.naver.com/",
+    url: "https://www.linkedin.com/in/%ED%98%B8%EC%97%B0-%EB%B3%80-69562a233/",
   },
 ];

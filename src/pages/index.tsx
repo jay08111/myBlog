@@ -3,9 +3,8 @@ import "../style.css";
 import styled from "@emotion/styled";
 import NavBar from "components/NavBar";
 import MyInformation from "components/MyInformation";
-// import Content from "components/Content";
 import { graphql, PageProps } from "gatsby";
-import { GraphQlResut, Posts } from "../types";
+import { GraphQlResut } from "../types";
 const IndexPage: React.FC<PageProps<GraphQlResut>> = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes;
   console.log("posts", posts);
@@ -13,16 +12,22 @@ const IndexPage: React.FC<PageProps<GraphQlResut>> = ({ data }) => {
     <>
       <NavBar />
       <MainContainer className="grid p-0 pr-8 pl-20 mt-8">
-        {/* <Content data={posts} /> */}
-        {/* {posts.map((item , index : number) => {
-          return <div key={index}>{item}</div>;
-        })} */}
+        <div>
+          {posts.map(({ html, frontmatter }, index: number) => {
+            const { date, desc, img, slug, title } = frontmatter;
+            return (
+              <div key={index}>
+                <h1>{html}</h1>
+                <h2>{date}</h2>
+              </div>
+            );
+          })}
+        </div>
         <MyInformation />
       </MainContainer>
     </>
   );
 };
-
 export default IndexPage;
 const MainContainer = styled.main`
   grid-template-columns: 3fr 1fr;

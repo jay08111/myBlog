@@ -1,6 +1,10 @@
-import React from "react";
-const Content: React.FC = () => {
-  return <div>hey</div>;
-};
+// import React from "react";
+// import { PageProps } from "gatsby";
+// import { PostProps } from "../types";
 
-export default Content;
+// const Content: React.FC<PostProps> = ({ data }) => {
+//   console.log("data", data);
+//   return <div>{data}</div>;
+// };
+
+// export default Content;

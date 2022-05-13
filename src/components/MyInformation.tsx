@@ -11,7 +11,7 @@ const MyInformation: React.FC = () => {
           alt="hoyeoun"
         />
       </Wrapper>
-      <div className="my-info  pl-3 leading-6">
+      <div className="my-info pl-3 leading-6">
         <strong className="text-3xl">Who Am I ?</strong>
         <p className="mt-1">Welcome to my personal blog!</p>
         <p>

@@ -1,9 +1,9 @@
 ---
 title: 9 Essntial Web Technologies
 desc: blahahahah
-slug: 1
+slug: 2
 date: 1652424815
-img: ../images/IMG_4934.png
+img: ./images/IMG_4934.png
 ---
 
 This post is a comprehensive guide on which is perhaps the right

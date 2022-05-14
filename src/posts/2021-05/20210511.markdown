@@ -3,7 +3,7 @@ title: 9 Essntial Web Technologies
 desc: blahahahah
 slug: 1
 date: 1652424815
-img: ../images/IMG_4934.png
+img: https://i.ibb.co/0fkbQJH/IMG-4934.jpg
 ---
 
 This post is a comprehensive guide on which is perhaps the right
